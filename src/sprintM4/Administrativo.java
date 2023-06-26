@@ -6,7 +6,6 @@ package sprintM4;
  *         Fernandez
  *
  */
-
 class Administrativo extends Usuario {
 	private String area;
 	private String experienciaPrevia;

@@ -9,7 +9,6 @@ import java.util.regex.Matcher;
  *         Fernandez
  *
  */
-
 public class Usuario implements IAsesoria{
 	private String nombre;
 	private String fechaNacimiento;

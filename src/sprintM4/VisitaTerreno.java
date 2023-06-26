@@ -3,6 +3,12 @@ package sprintM4;
 import java.time.LocalDate;
 import java.util.regex.Matcher;
 
+/**
+ * 
+ * @author Grupo 6: Sabina Leal, Juan Barrientos, Manuel Chavez, Sebastian
+ *         Fernandez
+ *
+ */
 public class VisitaTerreno {
 	private static int contador = 1;
 	private int idVisitaTerreno;

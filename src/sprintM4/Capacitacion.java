@@ -1,5 +1,6 @@
 package sprintM4;
 
+
 import java.util.regex.Matcher;
 
 /**
@@ -8,7 +9,6 @@ import java.util.regex.Matcher;
  *         Fernandez
  *
  */
-
 // Clase Capacitación
 class Capacitacion {
 	private static int contador = 1;
@@ -28,12 +28,12 @@ class Capacitacion {
     // Constructor que recibe todos los atributos de la clase como parámetros
     public Capacitacion(int rutCliente, String dia, String hora, String lugar, String duracion, int cantidadAsistentes) {
     	setIdCapacitacion();
-    	setRutCliente(rutCliente);
-        setDia(dia);
-        setHora(hora);
-        setLugar(lugar);
-        setDuracion(duracion);
-        setCantidadAsistentes(cantidadAsistentes);
+        this.rutCliente = rutCliente;
+        this.dia = dia;
+        this.hora = hora;
+        this.lugar = lugar;
+        this.duracion = duracion;
+        this.cantidadAsistentes = cantidadAsistentes;
     }
 
 	// Métodos accesores
@@ -76,12 +76,13 @@ class Capacitacion {
     }
 
     public void setDia(String dia) {
-		if (dia.equalsIgnoreCase("lunes") || dia.equalsIgnoreCase("martes") || dia.equalsIgnoreCase("miercoles")|| dia.equalsIgnoreCase("jueves")|| dia.equalsIgnoreCase("viernes") || dia.equalsIgnoreCase("sabado")|| dia.equalsIgnoreCase("domingo")) {
-			this.dia = dia;
-		} else {
-			throw new IllegalArgumentException("El dia debe ser entre lunes a domingo");
-		}
-	}
+        if (dia.equals("lunes") || dia.equals("martes") || dia.equals("miércoles") || dia.equals("jueves")
+                || dia.equals("viernes") || dia.equals("sábado") || dia.equals("domingo")) {
+            this.dia = dia;
+        } else {
+            throw new IllegalArgumentException("El día debe ser entre lunes a domingo");
+        }
+    }
 
     public void setHora(String hora) {
 		Matcher matcher = Accidente.patronHora.matcher(hora);
