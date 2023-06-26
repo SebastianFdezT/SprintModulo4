@@ -6,7 +6,6 @@ package sprintM4;
  *         Fernandez
  *
  */
-
 public class Cliente extends Usuario {
 	private int rut;
 	private String nombres;
@@ -178,4 +177,6 @@ public class Cliente extends Usuario {
 	public String ObtenerNombre() {
 		return nombres + " " + apellidos;
 	}
+	
+	
 }

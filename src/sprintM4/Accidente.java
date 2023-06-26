@@ -4,6 +4,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.time.LocalDate;
 
+/**
+ * 
+ * @author Grupo 6: Sabina Leal, Juan Barrientos, Manuel Chavez, Sebastian
+ *         Fernandez
+ *
+ */
 public class Accidente {
 	private static int contador = 1;
 	private int idAccidente;

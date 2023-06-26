@@ -1,5 +1,11 @@
 package sprintM4;
 
+/**
+ * 
+ * @author Grupo 6: Sabina Leal, Juan Barrientos, Manuel Chavez, Sebastian
+ *         Fernandez
+ *
+ */
 public class Revision {
 	private static int contador = 1;
 	private int idRevision;
@@ -76,6 +82,20 @@ public class Revision {
 	@Override
 	public String toString() {
 		return "Revisión [idRevision=" + idRevision + ", idVisitaTerreno=" + idVisitaTerreno + ", nombre=" + nombre
-				+ ", detalle=" + detalle + ", estado=" + estado + "]";
+				+ ", detalle=" + detalle + ", estado=" + obtenerEstado() + "]";
+	}
+	
+	public String obtenerEstado() {
+		String estadoRevision = "";
+		if (estado == 1) {
+			estadoRevision = " Sin problemas";
+		} else if (estado == 2) {
+			estadoRevision = " Con observaciones";
+		} else if (estado == 3) {
+			estadoRevision = " No aprueba";
+		} else {
+			estadoRevision = " No es valido";
+		}
+		return estadoRevision;
 	}
 }

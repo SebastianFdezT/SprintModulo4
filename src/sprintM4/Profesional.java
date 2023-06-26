@@ -9,7 +9,6 @@ import java.util.regex.Matcher;
  *         Fernandez
  *
  */
-
 class Profesional extends Usuario {
 	private String titulo;
 	private String fechaIngreso;
